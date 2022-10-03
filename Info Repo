@@ -1,0 +1,38 @@
+Health
+
+Biobert QA: https://www.kaggle.com/datasets/jonasbkemp/biobert-qa
+Identifying Entities in HealthCare data: https://www.kaggle.com/datasets/venkatasubramanian/entity-recognition-medical
+200000 Medical Research Paper Abstracts: https://www.kaggle.com/datasets/anshulmehtakaggl/200000-abstracts-for-seq-sentence-classification
+GENIA Bio-medical event dataset: https://www.kaggle.com/datasets/nishanthsalian/genia-biomedical-event-dataset
+2k clean medical articles (MedicalNewsToday): https://www.kaggle.com/datasets/trikialaaa/2k-clean-medical-articles-medicalnewstoday
+
+Covid Kaggle
+
+https://www.kaggle.com/datasets/rajasankar/covid19-open-research-dataset-sentence-clustering
+COVID-19 Indian News Headlines: https://www.kaggle.com/datasets/hkapoor/covid19-india-news-headlines-for-nlp
+US COVID Tweets: https://www.kaggle.com/datasets/yazanshannak/us-covid-tweets
+COVID-19 Research Preprint Data: https://www.kaggle.com/datasets/phiitm/covid19-research-preprint-data
+The Reddit COVID dataset: https://www.kaggle.com/datasets/pavellexyr/the-reddit-covid-dataset
+Coronavirus News (COVID-19): https://www.kaggle.com/datasets/saadaljebrreen/corona-various-news-covid19
+Coronavirus (covid19) Tweets: https://www.kaggle.com/datasets/smid80/coronavirus-covid19-tweets
+COVID-19 Open Research Dataset Challenge (CORD-19): https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge
+
+
+Roberta:
+https://huggingface.co/saibo/legal-roberta-base
+https://huggingface.co/nlpaueb/legal-bert-base-uncased
+
+Bert Info:
+https://github.com/nyu-dl/bert-gen
+
+
+HuggingFace Training:
+https://huggingface.co/blog/how-to-train
+https://huggingface.co/blog/ray-rag
+https://towardsdatascience.com/how-to-train-bert-aaad00533168
+https://towardsdatascience.com/how-to-use-bert-from-the-hugging-face-transformer-library-d373a22b0209
+
+Generative Models:
+https://huggingface.co/mrm8488/t5-base-finetuned-common_gen?text=flu+viral+concert+large+event
+https://huggingface.co/xlnet-base-cased
+https://huggingface.co/facebook/opt-350m
