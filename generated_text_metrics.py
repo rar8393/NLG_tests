@@ -53,3 +53,14 @@ def generation_sentence_simialrity(txt_prompt, gen_txt):
             similarity.append(sent.similarity(tmp))
             tmp = sent
     return similarity
+
+def visualize_dependecy_tree(text):
+    doc = nlp(text)
+    doc_list = [sent for sent in doc.sents]
+    options = {"color": "white", "collapse_phrases" : True, "bg": "#000000"}
+    displacy.render(doc_list, style="dep", options=options, jupyter=True)
+
+def visualize_ne_tree(text):
+    doc = nlp(text)
+    doc_list = [sent for sent in doc.sents]
+    displacy.render(doc_list, style="ent", jupyter=True)
