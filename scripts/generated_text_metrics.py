@@ -30,7 +30,7 @@ def _sentence_information(doc):
             token_list.append(token.lemma_)
         score = 1. - len(set(token_list))/len(token_list)
         repeat_scores.append(score)  
-    return len(sent_length), sum(sent_length)/len(sent_length), repeat_scores
+    return len(sent_length), sum(sent_length)/max(1, len(sent_length)), repeat_scores
 
 def generated_text_metric(txt):
     doc = nlp(txt)

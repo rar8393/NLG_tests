@@ -1,5 +1,6 @@
 from transformers import GPT2Tokenizer, OPTForCausalLM
 import generated_text_metrics as gtm
+import pandas as pd
 
 class generate_model_results:
     def __init__(self, tokenizer, model):
@@ -35,3 +36,23 @@ class generate_model_results:
             result['txt'] = self.generate_sample(txt, do_sample=do_sample, sample_size=sample_size, 
                                             max_length=max_length, visualize=visualize)
         return result
+    
+    def single_results_df(result_dict):
+        just_metrics = {}
+        for key in result_dict:
+            just_metrics[key] = result_dict[key]['metric']
+        return pd.DataFrame(just_metrics).T
+    
+    def multiple_prompt_df(result):
+        reformat_for_df = {}
+        count = 0
+        for key in result:
+            for key_2 in result[key]:
+                tmp_metrics = {}
+                tmp_metrics['prompt'] = key
+                tmp_metrics['generated_text'] = key_2
+                for metric in result[key][key_2]['metric']:
+                    tmp_metrics[metric] = result[key][key_2]['metric'][metric]
+                reformat_for_df[count] = tmp_metrics
+                count += 1
+        return pd.DataFrame(reformat_for_df).T
